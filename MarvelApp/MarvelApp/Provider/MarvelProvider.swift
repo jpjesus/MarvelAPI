@@ -12,7 +12,7 @@ let apiURL = "https://gateway.marvel.com:443/v1/public"
 
 enum MarvelProvider {
     case getMarvelCharacters(offset: Int, limitPerPage: Int)
-    case getDetailedInfo(id: Int)
+    case getComics(id: Int)
 }
 
 extension MarvelProvider: TargetType {
@@ -24,8 +24,8 @@ extension MarvelProvider: TargetType {
         switch self {
         case .getMarvelCharacters(_,_):
             return "characters"
-        case .getDetailedInfo(let id):
-            return "characters/\(id)"
+        case .getComics(let id):
+            return "comics/\(id)"
         }
     }
     
@@ -44,7 +44,7 @@ extension MarvelProvider: TargetType {
                                          "offset": offset,
                                          "apikey": MarvelProvider.publicMarvelKey]
             return .requestParameters(parameters: params, encoding: URLEncoding.queryString)
-        case .getDetailedInfo(_):
+        case .getComics(_):
             let params: [String: Any] = ["apikey": MarvelProvider.publicMarvelKey]
             return .requestParameters(parameters: params, encoding: URLEncoding.queryString)
         }
