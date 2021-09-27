@@ -21,6 +21,7 @@ final class MarvelListViewModel: MarvelListViewModelProtocol {
     private let provider: MoyaProvider<MarvelProvider>
     private var offset: Int = 0
     private var limitPerPage: Int = 20
+    var minimumChars = 3
     var characters: [Character] = []
     var displayMode: ListChoice = .allCharacters
     
@@ -33,7 +34,6 @@ final class MarvelListViewModel: MarvelListViewModelProtocol {
             .asObservable()
             .map(CharacterList.self)
             .flatMap({ [weak self] list -> Observable<[Character]> in
-                self?.characters = list.characters
                 self?.displayMode = .allCharacters
                 self?.offset = 0
                 return Observable.just(list.characters)
@@ -45,7 +45,6 @@ final class MarvelListViewModel: MarvelListViewModelProtocol {
             .asObservable()
             .map(CharacterList.self)
             .flatMap({ [weak self] list -> Observable<[Character]> in
-                self?.characters = list.characters
                 self?.displayMode = .search
                 return Observable.just(list.characters)
             }).retry(2)
@@ -57,7 +56,6 @@ final class MarvelListViewModel: MarvelListViewModelProtocol {
             .asObservable()
             .map(CharacterList.self)
             .flatMap({ [weak self] list -> Observable<[Character]> in
-                self?.characters.append(contentsOf: list.characters)
                 self?.displayMode = .allCharacters
                 return Observable.just(list.characters)
             }).retry(2)

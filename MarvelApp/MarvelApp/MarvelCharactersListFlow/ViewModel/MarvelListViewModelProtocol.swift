@@ -14,6 +14,7 @@ protocol MarvelListViewModelProtocol {
     
     var characters: [Character] { get set }
     var displayMode: ListChoice { get set }
+    var minimumChars: Int { get set }
     
     func getAllMarvelCharacters() -> Observable<[Character]>
     func fetchMarvelCharacters() -> Observable<[Character]>

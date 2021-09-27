@@ -28,7 +28,7 @@ final class MarvelListViewController: UIViewController {
     
     private var searchBarContainer: UIView?
     
-    private let viewModel: MarvelListViewModelProtocol
+    private var viewModel: MarvelListViewModelProtocol
     private let refreshControl = UIRefreshControl()
     private let disposeBag = DisposeBag()
     private var searchComponent: SearchBarComponent?
@@ -92,19 +92,25 @@ final class MarvelListViewController: UIViewController {
     
     private func fetchMarvelCharacters() {
         self.viewModel.getAllMarvelCharacters()
-            .subscribe(onNext: { [weak self] _ in
-                self?.refreshControl.endRefreshing()
-                self?.collectionView.reloadData()
+            .subscribe(onNext: { [weak self] characters in
+                guard let self = self else { return }
+                self.viewModel.characters = characters
+                self.refreshControl.endRefreshing()
+                self.collectionView.reloadData()
             }).disposed(by: disposeBag)
     }
     
     private func searchForCharacter(with query: String) {
-        self.viewModel.searchMarvelCharacter(with: query)
-            .subscribe(onNext: { [weak self] _ in
-                self?.collectionView.reloadData()
-            }, onError: { error in
-                
-            }).disposed(by: disposeBag)
+        if query.count >= viewModel.minimumChars {
+            self.viewModel.searchMarvelCharacter(with: query)
+                .subscribe(onNext: { [weak self] characters in
+                    guard let self = self else { return }
+                    self.viewModel.characters = characters
+                    self.collectionView.reloadData()
+                }, onError: { error in
+                    
+                }).disposed(by: disposeBag)
+        }
     }
     
     private func setSearchViewConstraints(with view: UIView) {
@@ -149,7 +155,9 @@ extension MarvelListViewController: UICollectionViewDelegate {
         if indexPath.row == viewModel.characters.count - 1 &&
             viewModel.displayMode == .allCharacters {
             viewModel.fetchMarvelCharacters()
-                .subscribe(onNext: { _ in
+                .subscribe(onNext: { [weak self] characters in
+                    guard let self = self else { return }
+                    self.viewModel.characters.append(contentsOf: characters)
                     collectionView.performBatchUpdates({
                         collectionView.reloadSections([0])
                     })
