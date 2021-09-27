@@ -7,12 +7,14 @@
 
 import Foundation
 import Moya
+import CryptoKit
 
-let apiURL = "https://gateway.marvel.com:443/v1/public"
+let apiURL = "https://gateway.marvel.com/v1/public"
 
 enum MarvelProvider {
     case getMarvelCharacters(offset: Int, limitPerPage: Int)
     case getComics(id: Int)
+    case searchMarvelCharacter(query: String)
 }
 
 extension MarvelProvider: TargetType {
@@ -22,7 +24,7 @@ extension MarvelProvider: TargetType {
     
     var path: String {
         switch self {
-        case .getMarvelCharacters(_,_):
+        case .getMarvelCharacters(_,_), .searchMarvelCharacter(_):
             return "characters"
         case .getComics(let id):
             return "comics/\(id)"
@@ -38,14 +40,26 @@ extension MarvelProvider: TargetType {
     }
     
     var task: Task {
+        let timestamp = "\(Date().timeIntervalSince1970)"
+        let hash = "\(timestamp)\(MarvelProvider.privateMarvelKey)\(MarvelProvider.publicMarvelKey)".data(using: .utf8)?.md5
         switch self {
         case .getMarvelCharacters(let offset, let limitPerPage):
             let params: [String: Any] = ["limit": limitPerPage,
                                          "offset": offset,
+                                         "ts": timestamp,
+                                         "hash": hash ?? "",
                                          "apikey": MarvelProvider.publicMarvelKey]
             return .requestParameters(parameters: params, encoding: URLEncoding.queryString)
         case .getComics(_):
-            let params: [String: Any] = ["apikey": MarvelProvider.publicMarvelKey]
+            let params: [String: Any] = ["ts": timestamp,
+                                         "hash": hash ?? "",
+                                         "apikey": MarvelProvider.publicMarvelKey]
+            return .requestParameters(parameters: params, encoding: URLEncoding.queryString)
+        case .searchMarvelCharacter(let query):
+            let params: [String: Any] = ["nameStartsWith": query,
+                                         "ts": timestamp,
+                                         "hash": hash ?? "",
+                                         "apikey": MarvelProvider.publicMarvelKey]
             return .requestParameters(parameters: params, encoding: URLEncoding.queryString)
         }
     }
@@ -62,6 +76,19 @@ extension MarvelProvider: TargetType {
             let plist = NSDictionary(contentsOfFile: filePath)
             guard let value = plist?.object(forKey: "MARVEL_PUBLIC_KEY") as? String else {
                 fatalError("Couldn't find key 'MARVEL_PUBLIC_KEY' in 'MarvelKeys.plist'.")
+            }
+            return value
+        }
+    }
+    
+    static var privateMarvelKey: String {
+        get {
+            guard let filePath = Bundle.main.path(forResource: "MarvelKeys", ofType: "plist") else {
+                fatalError("Couldn't find file 'MarvelKeys.plist'.")
+            }
+            let plist = NSDictionary(contentsOfFile: filePath)
+            guard let value = plist?.object(forKey: "MARVEL_PRIVATE_KEY") as? String else {
+                fatalError("Couldn't find key 'MARVEL_PRIVATE_KEY' in 'MarvelKeys.plist'.")
             }
             return value
         }

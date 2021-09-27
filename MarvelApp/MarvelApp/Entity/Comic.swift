@@ -25,7 +25,6 @@ struct Comic: Decodable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        //let thumb = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .thumbnail)
         thumbnail = try container.decodeIfPresent(MarvelImage.self, forKey: .thumbnail) ?? MarvelImage()
         name = try container.decodeIfPresent(String.self, forKey: .name) ?? ""
         description = try container.decodeIfPresent(String.self, forKey: .description) ?? ""

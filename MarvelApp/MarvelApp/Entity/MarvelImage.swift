@@ -10,7 +10,6 @@ import Foundation
 enum ImageSize: String {
     case portraitMedium = "portrait_medium"
     case portraitLarge = "portrait_xlarge"
-    case fullSize
     case detail = "detail"
     case landscapeLarge = "landscape_large"
     case landscapeMedium = "landscape_medium"

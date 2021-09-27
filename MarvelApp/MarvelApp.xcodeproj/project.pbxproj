@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0E20162700EA0F00E6BB56 /* MarvelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E20152700EA0F00E6BB56 /* MarvelListViewController.swift */; };
+		1C0E20192700F1E600E6BB56 /* MarvelCharacterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E20182700F1E600E6BB56 /* MarvelCharacterCellView.swift */; };
+		1C0E201C2700F25C00E6BB56 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E201B2700F25C00E6BB56 /* UIColor+Extensions.swift */; };
+		1C0E201E2700F29400E6BB56 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E201D2700F29400E6BB56 /* UIView+Extensions.swift */; };
+		1C0E20202700F2C100E6BB56 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E201F2700F2C100E6BB56 /* UINavigationController+Extensions.swift */; };
+		1C0E20222700F49300E6BB56 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E20212700F49300E6BB56 /* UIImage+Extensions.swift */; };
+		1C0E20242701131D00E6BB56 /* FlowStartingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E20232701131D00E6BB56 /* FlowStartingPoint.swift */; };
+		1C0E20262701147400E6BB56 /* CharacterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E20252701147400E6BB56 /* CharacterList.swift */; };
+		1C0E202827011BD200E6BB56 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E202727011BD200E6BB56 /* String+Extensions.swift */; };
+		1C0E20372701260100E6BB56 /* SearchBarComponentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E202D2701260100E6BB56 /* SearchBarComponentProtocol.swift */; };
+		1C0E20382701260100E6BB56 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E202E2701260100E6BB56 /* SearchView.swift */; };
+		1C0E20392701260100E6BB56 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E202F2701260100E6BB56 /* SearchBarView.swift */; };
+		1C0E203A2701260100E6BB56 /* SearchBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E20302701260100E6BB56 /* SearchBarComponent.swift */; };
+		1C0E203B2701260100E6BB56 /* SearchBarTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E20312701260100E6BB56 /* SearchBarTextField.swift */; };
 		1CDB94A826FF76000000C3B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB94A726FF76000000C3B6 /* AppDelegate.swift */; };
 		1CDB94AA26FF76000000C3B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB94A926FF76000000C3B6 /* SceneDelegate.swift */; };
 		1CDB94AC26FF76000000C3B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB94AB26FF76000000C3B6 /* ViewController.swift */; };
@@ -47,6 +61,20 @@
 
 /* Begin PBXFileReference section */
 		01B94B5593A062628CDDE0A6 /* Pods-MarvelApp-MarvelAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelApp-MarvelAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MarvelApp-MarvelAppUITests/Pods-MarvelApp-MarvelAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1C0E20152700EA0F00E6BB56 /* MarvelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelListViewController.swift; sourceTree = "<group>"; };
+		1C0E20182700F1E600E6BB56 /* MarvelCharacterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacterCellView.swift; sourceTree = "<group>"; };
+		1C0E201B2700F25C00E6BB56 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		1C0E201D2700F29400E6BB56 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		1C0E201F2700F2C100E6BB56 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		1C0E20212700F49300E6BB56 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		1C0E20232701131D00E6BB56 /* FlowStartingPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowStartingPoint.swift; sourceTree = "<group>"; };
+		1C0E20252701147400E6BB56 /* CharacterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterList.swift; sourceTree = "<group>"; };
+		1C0E202727011BD200E6BB56 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		1C0E202D2701260100E6BB56 /* SearchBarComponentProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarComponentProtocol.swift; sourceTree = "<group>"; };
+		1C0E202E2701260100E6BB56 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		1C0E202F2701260100E6BB56 /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		1C0E20302701260100E6BB56 /* SearchBarComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarComponent.swift; sourceTree = "<group>"; };
+		1C0E20312701260100E6BB56 /* SearchBarTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarTextField.swift; sourceTree = "<group>"; };
 		1CDB94A426FF76000000C3B6 /* MarvelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDB94A726FF76000000C3B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CDB94A926FF76000000C3B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +145,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1C0E20142700E9F700E6BB56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C0E20172700F1CF00E6BB56 /* Cell */,
+				1C0E20152700EA0F00E6BB56 /* MarvelListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C0E20172700F1CF00E6BB56 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1C0E20182700F1E600E6BB56 /* MarvelCharacterCellView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1C0E201A2700F23D00E6BB56 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1C0E201B2700F25C00E6BB56 /* UIColor+Extensions.swift */,
+				1C0E201D2700F29400E6BB56 /* UIView+Extensions.swift */,
+				1C0E201F2700F2C100E6BB56 /* UINavigationController+Extensions.swift */,
+				1C0E20212700F49300E6BB56 /* UIImage+Extensions.swift */,
+				1C0E202727011BD200E6BB56 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1C0E202C2701260100E6BB56 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				1C0E202D2701260100E6BB56 /* SearchBarComponentProtocol.swift */,
+				1C0E202E2701260100E6BB56 /* SearchView.swift */,
+				1C0E202F2701260100E6BB56 /* SearchBarView.swift */,
+				1C0E20302701260100E6BB56 /* SearchBarComponent.swift */,
+				1C0E20312701260100E6BB56 /* SearchBarTextField.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
 		1CDB949B26FF76000000C3B6 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +211,7 @@
 		1CDB94A626FF76000000C3B6 /* MarvelApp */ = {
 			isa = PBXGroup;
 			children = (
+				1C0E201A2700F23D00E6BB56 /* Extensions */,
 				1CDB94E527000B6E0000C3B6 /* MarvelCharactersListFlow */,
 				1CDB94DC26FF908C0000C3B6 /* Entity */,
 				1CDB94D926FF81410000C3B6 /* Provider */,
@@ -153,6 +223,7 @@
 				1CDB94B226FF76010000C3B6 /* LaunchScreen.storyboard */,
 				1CDB94B526FF76010000C3B6 /* Info.plist */,
 				1CDB94D726FF7FD20000C3B6 /* MarvelKeys.plist */,
+				1C0E20232701131D00E6BB56 /* FlowStartingPoint.swift */,
 			);
 			path = MarvelApp;
 			sourceTree = "<group>";
@@ -190,6 +261,7 @@
 				1CDB94DF26FF970E0000C3B6 /* Comic.swift */,
 				1CDB94E126FFB5DC0000C3B6 /* MarvelImage.swift */,
 				1CDB94E326FFFE020000C3B6 /* ExternalLinks.swift */,
+				1C0E20252701147400E6BB56 /* CharacterList.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -197,6 +269,8 @@
 		1CDB94E527000B6E0000C3B6 /* MarvelCharactersListFlow */ = {
 			isa = PBXGroup;
 			children = (
+				1C0E202C2701260100E6BB56 /* SearchBar */,
+				1C0E20142700E9F700E6BB56 /* View */,
 				1CDB94E627000B870000C3B6 /* ViewModel */,
 			);
 			path = MarvelCharactersListFlow;
@@ -463,16 +537,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0E20242701131D00E6BB56 /* FlowStartingPoint.swift in Sources */,
+				1C0E201E2700F29400E6BB56 /* UIView+Extensions.swift in Sources */,
 				1CDB94AC26FF76000000C3B6 /* ViewController.swift in Sources */,
+				1C0E20382701260100E6BB56 /* SearchView.swift in Sources */,
+				1C0E203A2701260100E6BB56 /* SearchBarComponent.swift in Sources */,
+				1C0E20392701260100E6BB56 /* SearchBarView.swift in Sources */,
 				1CDB94E026FF970E0000C3B6 /* Comic.swift in Sources */,
 				1CDB94E827000BA90000C3B6 /* MarvelListViewModel.swift in Sources */,
+				1C0E201C2700F25C00E6BB56 /* UIColor+Extensions.swift in Sources */,
 				1CDB94E426FFFE020000C3B6 /* ExternalLinks.swift in Sources */,
+				1C0E20162700EA0F00E6BB56 /* MarvelListViewController.swift in Sources */,
 				1CDB94DB26FF84A70000C3B6 /* MarvelProvider.swift in Sources */,
 				1CDB94DE26FF909F0000C3B6 /* Character.swift in Sources */,
 				1CDB94A826FF76000000C3B6 /* AppDelegate.swift in Sources */,
 				1CDB94AA26FF76000000C3B6 /* SceneDelegate.swift in Sources */,
+				1C0E20222700F49300E6BB56 /* UIImage+Extensions.swift in Sources */,
+				1C0E202827011BD200E6BB56 /* String+Extensions.swift in Sources */,
 				1CDB94E226FFB5DC0000C3B6 /* MarvelImage.swift in Sources */,
+				1C0E203B2701260100E6BB56 /* SearchBarTextField.swift in Sources */,
 				1CDB94EA27000BE20000C3B6 /* MarvelListViewModelProtocol.swift in Sources */,
+				1C0E20262701147400E6BB56 /* CharacterList.swift in Sources */,
+				1C0E20202700F2C100E6BB56 /* UINavigationController+Extensions.swift in Sources */,
+				1C0E20372701260100E6BB56 /* SearchBarComponentProtocol.swift in Sources */,
+				1C0E20192700F1E600E6BB56 /* MarvelCharacterCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
