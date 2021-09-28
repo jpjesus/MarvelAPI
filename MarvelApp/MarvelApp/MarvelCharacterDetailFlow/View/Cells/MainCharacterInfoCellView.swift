@@ -7,6 +7,12 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
+
+protocol CharacterDetailDelegate: AnyObject {
+    func showCharacterWiki()
+}
 
 class MainCharacterInfoCellView: UICollectionViewCell {
     
@@ -24,13 +30,17 @@ class MainCharacterInfoCellView: UICollectionViewCell {
     private lazy var externalInfoButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Character Wiki", for: .normal)
-        button.setTitleColor(.label, for: .normal)
+        button.setTitle(" Character Wiki ", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 11)
+        button.setTitleColor(.label, for: .normal)
+        button.backgroundColor = .white
+        button.setupBorder(width: 2, color: .borders)
         return button
     }()
 
     static var identifier = "MainCharacterInfoCellView"
+    private let disposeBag = DisposeBag()
+    private weak var delegate: CharacterDetailDelegate?
     
     override func prepareForReuse() {
         super.prepareForReuse()
@@ -47,9 +57,11 @@ class MainCharacterInfoCellView: UICollectionViewCell {
         super.init(frame: frame)
         addSubviews()
         setConstraints()
+        bind()
     }
     
-    func setupCell(with character: Character) {
+    func setupCell(with character: Character, delegate: CharacterDetailDelegate) {
+        self.delegate = delegate
         descriptionArea.text = character.description.isEmpty ? "No info available" : character.description
     }
     
@@ -61,6 +73,14 @@ class MainCharacterInfoCellView: UICollectionViewCell {
     private func setConstraints() {
         setTextAreaConstraints()
         setWikiInfoConstraints()
+    }
+    
+    func bind() {
+        externalInfoButton.rx.tap
+            .debounce(.milliseconds(500), scheduler: MainScheduler.instance)
+            .subscribe(onNext:{ [weak self] in
+                self?.delegate?.showCharacterWiki()
+            }).disposed(by: disposeBag)
     }
 }
 
@@ -79,5 +99,6 @@ private extension MainCharacterInfoCellView {
         externalInfoButton.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 15).isActive = true
         externalInfoButton.widthAnchor.constraint(lessThanOrEqualTo: widthAnchor, multiplier: 1).isActive = true
         externalInfoButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5).isActive = true
+        externalInfoButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
 }

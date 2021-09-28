@@ -77,19 +77,19 @@ final class MarvelCharacterViewController: UIViewController {
     }
     
     func getCharacterComics() {
-        viewModel.getComicsInfo()
-            .subscribe(onNext: { [weak self] comics in
+        Observable.zip(viewModel.getComicsInfo(), viewModel.getAdditionalInfo())
+            .asObservable()
+            .subscribe(onNext:{ [weak self] (comics, extraInfo) in
                 guard let self = self else { return }
                 self.viewModel.character.comics = comics
                 self.imageCollectionView.reloadData()
-            }, onError: { error in
-                
+            } ,onError:{ error in
+        
             }).disposed(by: disposeBag)
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        
         imageCollectionView.reloadData()
     }
 }
@@ -111,7 +111,7 @@ private extension MarvelCharacterViewController {
 extension MarvelCharacterViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -133,30 +133,59 @@ extension MarvelCharacterViewController: UICollectionViewDataSource {
                                                                 for: indexPath) as? MainCharacterInfoCellView else {
                 return UICollectionViewCell(frame: .zero)
             }
-            cell.setupCell(with: viewModel.character)
+            cell.setupCell(with: viewModel.character, delegate: self)
+            return cell
+        case 2:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MarvelCollectionContainerViewCell.identifier,
+                                                                for: indexPath) as? MarvelCollectionContainerViewCell else {
+                return UICollectionViewCell(frame: .zero)
+            }
+            cell.setupCell(with: viewModel.character, type: .comics)
+            cell.clipsToBounds = true
+            return cell
+        case 3:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MarvelCollectionContainerViewCell.identifier,
+                                                                for: indexPath) as? MarvelCollectionContainerViewCell else {
+                return UICollectionViewCell(frame: .zero)
+            }
+            cell.setupCell(with: viewModel.character, type: .events)
+            cell.clipsToBounds = true
             return cell
         default:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MarvelCollectionContainerViewCell.identifier,
                                                                 for: indexPath) as? MarvelCollectionContainerViewCell else {
                 return UICollectionViewCell(frame: .zero)
             }
-            cell.setupCell(with: viewModel.character)
+            cell.setupCell(with: viewModel.character, type: .series)
             cell.clipsToBounds = true
             return cell
         }
     }
 }
 
+extension MarvelCharacterViewController: CharacterDetailDelegate {
+    func showCharacterWiki() {
+        viewModel.showExternalInfo(with: viewModel.wikiUrl, navigation: navigationController)
+    }
+}
 
 extension MarvelCharacterViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         referenceSizeForHeaderInSection section: Int) -> CGSize {
+        
         if section <= 1 {
             return .zero
         } else {
-            return CGSize(width: collectionView.bounds.width, height: 30)
+            switch section {
+            case 2 where self.viewModel.character.comics.count > 0,
+                 3 where self.viewModel.character.events.count > 0,
+                 4 where self.viewModel.character.series.count > 0:
+                return CGSize(width: collectionView.bounds.width, height: 30)
+            default:
+                return .zero
+            }
         }
     }
 }
@@ -170,8 +199,12 @@ extension MarvelCharacterViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: collectionView.bounds.width, height: 150)
         case 1:
             return CGSize(width: collectionView.bounds.width, height: 120)
+        case 2 where self.viewModel.character.comics.count > 0,
+             3 where self.viewModel.character.events.count > 0,
+             4 where self.viewModel.character.series.count > 0:
+            return CGSize(width: collectionView.bounds.width, height: 200)
         default:
-            return CGSize(width: collectionView.bounds.width, height: 250)
+            return .zero
         }
     }
     
@@ -179,9 +212,21 @@ extension MarvelCharacterViewController: UICollectionViewDelegateFlowLayout {
         guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
                                                                                   withReuseIdentifier: "header",
                                                                                   for: indexPath) as? SectionHeaderTitle else { return UICollectionReusableView()}
-        if kind == UICollectionView.elementKindSectionHeader && indexPath.section > 1 {
-            sectionHeader.label.text = "Comics"
-            return sectionHeader
+        if kind == UICollectionView.elementKindSectionHeader && indexPath.section > 1{
+            switch indexPath.section {
+            case 2:
+                sectionHeader.label.text = "Comics"
+                return sectionHeader
+            case 3:
+                sectionHeader.label.text = "Events"
+                return sectionHeader
+            case 4:
+                sectionHeader.label.text = "Series"
+                return sectionHeader
+            default:
+                return UICollectionReusableView()
+            }
+            
         } else {
             return UICollectionReusableView()
         }

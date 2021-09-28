@@ -28,6 +28,7 @@ extension UIImageView {
         addSubview(activityIndicator)
         activityIndicator.startAnimating()
         activityIndicator.center = self.center
+        
         let task = URLSession.shared.dataTask(with: url ?? URL(fileURLWithPath: ""), completionHandler: { (data, response, error) in
             if error != nil {
                 print(error ?? "")

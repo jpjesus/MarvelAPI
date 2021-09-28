@@ -7,9 +7,15 @@
 
 import Foundation
 
-class ComicList: Decodable {
+enum CollectionInfoType {
+     case comics
+     case events
+     case series
+}
 
-    var comics: [Comic]
+class AdditionalInfoList: Decodable {
+
+    var results: [AdditionalInfo]
     
     enum CodingKeys: String, CodingKey  {
         case data
@@ -17,12 +23,12 @@ class ComicList: Decodable {
     }
     
     init() {
-        comics = []
+        results = []
     }
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let data = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .data)
-        comics = try data.decodeIfPresent([Comic].self, forKey: .results) ?? []
+        results = try data.decodeIfPresent([AdditionalInfo].self, forKey: .results) ?? []
     }
 }

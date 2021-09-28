@@ -12,7 +12,9 @@ import RxCocoa
 protocol MarvelCharacterViewModelProtocol {
     
     var character: Character { get set }
+    var wikiUrl: String { get }
     
-    func getComicsInfo() -> Observable<[Comic]>
-    func showExternalInfo(with url: String)
+    func getComicsInfo() -> Observable<[AdditionalInfo]>
+    func getAdditionalInfo() -> Observable<Void>
+    func showExternalInfo(with url: String, navigation: UINavigationController?)
 }

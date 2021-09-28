@@ -13,7 +13,8 @@ class CharacterImageViewCell: UICollectionViewCell {
     private lazy var characterImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.contentMode = .scaleAspectFill
+        image.contentMode = .scaleToFill
+        image.sizeToFit()
         image.clipsToBounds = true
         return image
     }()

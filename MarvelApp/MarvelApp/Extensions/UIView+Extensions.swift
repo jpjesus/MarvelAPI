@@ -25,4 +25,26 @@ extension UIView {
         layoutIfNeeded()
         setupRoundedCorners(radius: min(frame.size.height, frame.size.width) / 2)
     }
+    
+    func bindFrameToSuperviewBounds() {
+        guard let superview = self.superview else {
+            return
+        }
+        self.translatesAutoresizingMaskIntoConstraints = false
+        superview.addConstraintsToFit(view: self)
+    }
+    
+    func addConstraintsToFit(view: UIView) {
+        let verticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[view]|",
+                                                                 options: NSLayoutConstraint.FormatOptions(),
+                                                                 metrics: nil,
+                                                                 views: ["view": view])
+        addConstraints(verticalConstraints)
+        
+        let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|[view]|",
+                                                                   options: NSLayoutConstraint.FormatOptions(),
+                                                                   metrics: nil,
+                                                                   views: ["view": view])
+        addConstraints(horizontalConstraints)
+    }
 }

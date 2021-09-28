@@ -21,7 +21,7 @@ final class MarvelComicCellView: UICollectionViewCell {
     lazy var comicLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.font = UIFont.boldSystemFont(ofSize: 8)
+        label.font = UIFont.boldSystemFont(ofSize: 12)
         label.lineBreakMode = .byWordWrapping
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
@@ -36,7 +36,7 @@ final class MarvelComicCellView: UICollectionViewCell {
         return image
     }()
     
-    private var comic: Comic?
+    private var comic: AdditionalInfo?
     private var imageTask: URLSessionTask?
     static var identifier = "MarvelComicCellView"
     
@@ -61,7 +61,7 @@ final class MarvelComicCellView: UICollectionViewCell {
         setConstraints()
     }
     
-    func setupCell(with comic: Comic) {
+    func setupCell(with comic: AdditionalInfo) {
         comicLabel.text = comic.name
         imageTask = comicImage.loadImage(with: comic.thumbnail, size: .detail)
         self.setupBorder(width: 1.5, color: UIColor.primary)

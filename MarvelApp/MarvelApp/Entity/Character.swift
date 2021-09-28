@@ -12,7 +12,9 @@ struct Character: Decodable {
     var id: Int
     var name: String
     var description: String
-    var comics: [Comic] = []
+    var comics: [AdditionalInfo] = []
+    var events: [AdditionalInfo] = []
+    var series: [AdditionalInfo] = []
     var externalInfo: [ExternalLinks]
     var thumbnail: MarvelImage
     

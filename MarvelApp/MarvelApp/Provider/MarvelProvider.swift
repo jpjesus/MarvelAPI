@@ -15,6 +15,9 @@ enum MarvelProvider {
     case getMarvelCharacters(offset: Int, limitPerPage: Int)
     case getComics(id: Int)
     case searchMarvelCharacter(query: String)
+    case getEvents(id: Int)
+    case getSeries(id: Int)
+    case getStories(id: Int)
 }
 
 extension MarvelProvider: TargetType {
@@ -28,6 +31,12 @@ extension MarvelProvider: TargetType {
             return "characters"
         case .getComics(let id):
             return "characters/\(id)/comics"
+        case .getEvents(let id):
+            return "characters/\(id)/events"
+        case .getSeries(let id):
+            return "characters/\(id)/series"
+        case .getStories(let id):
+            return "characters/\(id)/stories"
         }
     }
     
@@ -65,7 +74,7 @@ extension MarvelProvider: TargetType {
                                          "hash": hash ?? "",
                                          "apikey": MarvelProvider.publicMarvelKey]
             return .requestParameters(parameters: params, encoding: URLEncoding.queryString)
-        case .getComics(_):
+        case .getComics,.getSeries,.getEvents,.getStories:
             let params: [String: Any] = ["ts": timestamp,
                                          "hash": hash ?? "",
                                          "apikey": MarvelProvider.publicMarvelKey]

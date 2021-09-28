@@ -29,10 +29,12 @@ class MarvelCollectionContainerViewCell: UICollectionViewCell {
     }()
     
     private var character: Character?
+    private var collectionType: CollectionInfoType = .comics
     static var identifier = "MarvelCollectionContainerViewCell"
     
-    func setupCell(with character: Character) {
+    func setupCell(with character: Character, type: CollectionInfoType) {
         self.character = character
+        self.collectionType = type
         imageCollectionView.reloadData()
     }
     
@@ -67,7 +69,14 @@ extension MarvelCollectionContainerViewCell {
 extension MarvelCollectionContainerViewCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return character?.comics.count ?? 0
+        switch collectionType {
+        case .comics:
+            return character?.comics.count ?? 0
+        case .events:
+            return character?.events.count ?? 0
+        case .series:
+            return character?.series.count ?? 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -76,7 +85,14 @@ extension MarvelCollectionContainerViewCell: UICollectionViewDataSource {
                                                             for: indexPath) as? MarvelComicCellView else {
             return UICollectionViewCell(frame: .zero)
         }
-        cell.setupCell(with: character?.comics[indexPath.row] ?? Comic())
+        switch collectionType {
+        case .comics:
+            cell.setupCell(with: character?.comics[indexPath.row] ?? AdditionalInfo())
+        case .events:
+            cell.setupCell(with: character?.events[indexPath.row] ?? AdditionalInfo())
+        case .series:
+            cell.setupCell(with: character?.series[indexPath.row] ?? AdditionalInfo())
+        }
         return cell
     }
 }
