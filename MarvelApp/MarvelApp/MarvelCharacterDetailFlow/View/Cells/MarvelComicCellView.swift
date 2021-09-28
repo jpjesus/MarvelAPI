@@ -12,7 +12,7 @@ final class MarvelComicCellView: UICollectionViewCell {
     
     lazy var cellContainerView: UIView = {
         let view = UIView()
-        view.setupRoundedCorners(radius: 10)
+        view.setupRoundedCorners(radius: 16)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = UIColor.background
         return view
@@ -21,7 +21,7 @@ final class MarvelComicCellView: UICollectionViewCell {
     lazy var comicLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.font = UIFont.boldSystemFont(ofSize: 8)
         label.lineBreakMode = .byWordWrapping
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
@@ -32,8 +32,7 @@ final class MarvelComicCellView: UICollectionViewCell {
     lazy var comicImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.contentMode = .scaleAspectFill
-        image.setupRoundedCorners(radius: 16)
+        image.contentMode = .scaleToFill
         return image
     }()
     
@@ -82,7 +81,6 @@ final class MarvelComicCellView: UICollectionViewCell {
     }
 }
 
-
 private extension MarvelComicCellView {
     
     func setContainerConstraints() {
@@ -102,7 +100,7 @@ private extension MarvelComicCellView {
     
     func setTitleConstraints() {
         comicLabel.topAnchor.constraint(equalTo: comicImage.bottomAnchor, constant: 12).isActive = true
-        comicLabel.bottomAnchor.constraint(equalTo: cellContainerView.bottomAnchor, constant: 12).isActive = true
+        comicLabel.bottomAnchor.constraint(equalTo: cellContainerView.bottomAnchor, constant: -5).isActive = true
         comicLabel.centerXAnchor.constraint(equalTo: cellContainerView.centerXAnchor).isActive = true
         comicLabel.widthAnchor.constraint(lessThanOrEqualTo: cellContainerView.widthAnchor, multiplier: 1).isActive = true
         comicLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true

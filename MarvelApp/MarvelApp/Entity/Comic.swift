@@ -23,6 +23,14 @@ struct Comic: Decodable {
         case images
     }
     
+    init() {
+        name = ""
+        description = ""
+        issueNumber = 0
+        comicImages = []
+        thumbnail = MarvelImage()
+    }
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         thumbnail = try container.decodeIfPresent(MarvelImage.self, forKey: .thumbnail) ?? MarvelImage()

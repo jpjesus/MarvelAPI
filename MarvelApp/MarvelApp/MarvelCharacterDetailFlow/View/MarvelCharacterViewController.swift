@@ -14,47 +14,24 @@ final class MarvelCharacterViewController: UIViewController {
     
     // MARK: UI Elements
     private lazy var imageCollectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.minimumInteritemSpacing = 2
-        layout.minimumLineSpacing = 4
         let collection = UICollectionView(frame: .zero,
-                                          collectionViewLayout: layout)
+                                          collectionViewLayout: UICollectionViewFlowLayout())
         collection.showsHorizontalScrollIndicator = false
         collection.showsVerticalScrollIndicator = false
         collection.translatesAutoresizingMaskIntoConstraints = false
         collection.dataSource = self
         collection.delegate = self
         collection.backgroundColor = .clear
-        collection.register(MarvelComicCellView.self,
-                            forCellWithReuseIdentifier: MarvelComicCellView.identifier)
+        collection.register(CharacterImageViewCell.self,
+                            forCellWithReuseIdentifier: CharacterImageViewCell.identifier)
+        collection.register(MarvelCollectionContainerViewCell.self,
+                            forCellWithReuseIdentifier: MarvelCollectionContainerViewCell.identifier)
+        collection.register(MainCharacterInfoCellView.self,
+                            forCellWithReuseIdentifier: MainCharacterInfoCellView.identifier)
+        collection.register(SectionHeaderTitle.self,
+                            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                            withReuseIdentifier: "header")
         return collection
-    }()
-    
-    private lazy var descriptionArea: UITextView = {
-        let textView = UITextView()
-        textView.font =  UIFont.systemFont(ofSize: 13)
-        textView.isEditable = false
-        textView.textAlignment = .left
-        textView.textColor = UIColor.label
-        textView.isScrollEnabled = false
-        textView.translatesAutoresizingMaskIntoConstraints = false
-        return textView
-    }()
-    
-    private lazy var characterImage: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.contentMode = .scaleToFill
-        return image
-    }()
-    
-    private lazy var externalInfoButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Character Wiki", for: .normal)
-        button.setTitleColor(.label, for: .normal)
-        return button
     }()
     
     private var viewModel: MarvelCharacterViewModelProtocol
@@ -78,27 +55,16 @@ final class MarvelCharacterViewController: UIViewController {
         view.backgroundColor = .background
         setNavigation(viewModel.character)
         addSubviews()
-        setConstraints()
         setView(with: viewModel.character)
     }
     
     func addSubviews() {
-        view.addSubview(characterImage)
-        view.addSubview(descriptionArea)
-        view.addSubview(externalInfoButton)
         view.addSubview(imageCollectionView)
-    }
-    
-    func setConstraints() {
-        setCharacterImageConstraints()
-        setTextAreaConstraints()
-        setWikiInfoConstraints()
         setImageCollectionConstraints()
     }
     
+    
     func setView(with character: Character) {
-        _ = characterImage.loadImage(with: character.thumbnail, size: .detail)
-        descriptionArea.text = viewModel.character.description.isEmpty ? "No Info available" : viewModel.character.description
         getCharacterComics()
         view.layoutIfNeeded()
     }
@@ -131,35 +97,12 @@ final class MarvelCharacterViewController: UIViewController {
 
 private extension MarvelCharacterViewController {
     
-    func setCharacterImageConstraints() {
-        characterImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        characterImage.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        characterImage.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        characterImage.heightAnchor.constraint(equalToConstant: 120).isActive = true
-    }
-    
-    func setTextAreaConstraints() {
-        descriptionArea.isHidden = false
-        descriptionArea.topAnchor.constraint(equalTo: characterImage.bottomAnchor, constant: 10).isActive = true
-        descriptionArea.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 15).isActive = true
-        descriptionArea.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -15).isActive = true
-        descriptionArea.heightAnchor.constraint(lessThanOrEqualTo: view.heightAnchor, multiplier: 1).isActive = true
-    }
-    
-    func setWikiInfoConstraints() {
-        externalInfoButton.topAnchor.constraint(equalTo: descriptionArea.bottomAnchor, constant: 10).isActive = true
-        externalInfoButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 15).isActive = true
-        externalInfoButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        externalInfoButton.widthAnchor.constraint(lessThanOrEqualTo: view.widthAnchor, multiplier: 1).isActive = true
-    }
-    
     func setImageCollectionConstraints() {
-        imageCollectionView.topAnchor.constraint(equalTo: externalInfoButton.bottomAnchor, constant: 10).isActive = true
+        imageCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15).isActive = true
         imageCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -5).isActive = true
         imageCollectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 15).isActive = true
         imageCollectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -15).isActive = true
         imageCollectionView.widthAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 1).isActive = true
-        imageCollectionView.heightAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 1).isActive = true
     }
 }
 
@@ -167,19 +110,54 @@ private extension MarvelCharacterViewController {
 // MARK: - Collection Flow datasource
 extension MarvelCharacterViewController: UICollectionViewDataSource {
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 3
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.character.comics.count
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MarvelComicCellView.identifier,
-                                                            for: indexPath) as? MarvelComicCellView else {
-            return UICollectionViewCell(frame: .zero)
+        switch indexPath.section {
+        case 0:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CharacterImageViewCell.identifier,
+                                                                for: indexPath) as? CharacterImageViewCell else {
+                return UICollectionViewCell(frame: .zero)
+            }
+            cell.setupCell(with: viewModel.character)
+            return cell
+        case 1:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainCharacterInfoCellView.identifier,
+                                                                for: indexPath) as? MainCharacterInfoCellView else {
+                return UICollectionViewCell(frame: .zero)
+            }
+            cell.setupCell(with: viewModel.character)
+            return cell
+        default:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MarvelCollectionContainerViewCell.identifier,
+                                                                for: indexPath) as? MarvelCollectionContainerViewCell else {
+                return UICollectionViewCell(frame: .zero)
+            }
+            cell.setupCell(with: viewModel.character)
+            cell.clipsToBounds = true
+            return cell
         }
-        cell.setupCell(with: viewModel.character.comics[indexPath.row])
-        cell.clipsToBounds = true
-        return cell
+    }
+}
+
+
+extension MarvelCharacterViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        referenceSizeForHeaderInSection section: Int) -> CGSize {
+        if section <= 1 {
+            return .zero
+        } else {
+            return CGSize(width: collectionView.bounds.width, height: 30)
+        }
     }
 }
 
@@ -187,28 +165,25 @@ extension MarvelCharacterViewController: UICollectionViewDataSource {
 extension MarvelCharacterViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, windowScene.activationState == .foregroundActive else { return .zero }
-        
-        switch windowScene.interfaceOrientation {
-        case .portrait:
-            return CGSize(width: 250, height: collectionView.bounds.height)
-        case .landscapeLeft,
-             .landscapeRight:
-            return CGSize(width: setWidhtSize(3, collectionViewLayout: collectionViewLayout, collectionView: collectionView), height: collectionView.bounds.height)
+        switch indexPath.section {
+        case 0:
+            return CGSize(width: collectionView.bounds.width, height: 150)
+        case 1:
+            return CGSize(width: collectionView.bounds.width, height: 120)
         default:
-            return CGSize.zero
+            return CGSize(width: collectionView.bounds.width, height: 250)
         }
     }
     
-    private func setWidhtSize(_ numberOfCells: Int, collectionViewLayout: UICollectionViewLayout, collectionView: UICollectionView) -> CGFloat {
-           guard let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout else {
-               return .zero
-           }
-           let spacing = flowLayout.sectionInset.left
-               + flowLayout.sectionInset.right
-               + (flowLayout.minimumInteritemSpacing * CGFloat(numberOfCells - 1))
-           
-           return (collectionView.bounds.width - spacing) / CGFloat(numberOfCells)
-       }
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                                  withReuseIdentifier: "header",
+                                                                                  for: indexPath) as? SectionHeaderTitle else { return UICollectionReusableView()}
+        if kind == UICollectionView.elementKindSectionHeader && indexPath.section > 1 {
+            sectionHeader.label.text = "Comics"
+            return sectionHeader
+        } else {
+            return UICollectionReusableView()
+        }
+    }
 }

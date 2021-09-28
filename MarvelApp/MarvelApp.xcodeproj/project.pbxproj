@@ -31,6 +31,10 @@
 		1C0E20512702DCC100E6BB56 /* MarvelListMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C0E20502702DCC100E6BB56 /* MarvelListMock.json */; };
 		1C0E20522702DCC100E6BB56 /* MarvelListMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C0E20502702DCC100E6BB56 /* MarvelListMock.json */; };
 		1C0E20552702DCEA00E6BB56 /* MarvelListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E20542702DCEA00E6BB56 /* MarvelListTests.swift */; };
+		1C0E205727033CF800E6BB56 /* MainCharacterInfoCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E205627033CF800E6BB56 /* MainCharacterInfoCellView.swift */; };
+		1C0E2059270342D100E6BB56 /* MarvelCollectionContainerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E2058270342D100E6BB56 /* MarvelCollectionContainerViewCell.swift */; };
+		1C0E205B2703473500E6BB56 /* SectionHeaderTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E205A2703473500E6BB56 /* SectionHeaderTitle.swift */; };
+		1C0E205D2703558C00E6BB56 /* CharacterImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0E205C2703558B00E6BB56 /* CharacterImageViewCell.swift */; };
 		1CDB94A826FF76000000C3B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB94A726FF76000000C3B6 /* AppDelegate.swift */; };
 		1CDB94AA26FF76000000C3B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB94A926FF76000000C3B6 /* SceneDelegate.swift */; };
 		1CDB94AC26FF76000000C3B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB94AB26FF76000000C3B6 /* ViewController.swift */; };
@@ -93,6 +97,10 @@
 		1C0E204D2702DC6100E6BB56 /* MarvelListSearchMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MarvelListSearchMock.json; sourceTree = "<group>"; };
 		1C0E20502702DCC100E6BB56 /* MarvelListMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MarvelListMock.json; sourceTree = "<group>"; };
 		1C0E20542702DCEA00E6BB56 /* MarvelListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelListTests.swift; sourceTree = "<group>"; };
+		1C0E205627033CF800E6BB56 /* MainCharacterInfoCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCharacterInfoCellView.swift; sourceTree = "<group>"; };
+		1C0E2058270342D100E6BB56 /* MarvelCollectionContainerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCollectionContainerViewCell.swift; sourceTree = "<group>"; };
+		1C0E205A2703473500E6BB56 /* SectionHeaderTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderTitle.swift; sourceTree = "<group>"; };
+		1C0E205C2703558B00E6BB56 /* CharacterImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImageViewCell.swift; sourceTree = "<group>"; };
 		1CDB94A426FF76000000C3B6 /* MarvelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDB94A726FF76000000C3B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CDB94A926FF76000000C3B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -235,6 +243,10 @@
 			isa = PBXGroup;
 			children = (
 				1C0E204A270226F700E6BB56 /* MarvelComicCellView.swift */,
+				1C0E205627033CF800E6BB56 /* MainCharacterInfoCellView.swift */,
+				1C0E2058270342D100E6BB56 /* MarvelCollectionContainerViewCell.swift */,
+				1C0E205A2703473500E6BB56 /* SectionHeaderTitle.swift */,
+				1C0E205C2703558B00E6BB56 /* CharacterImageViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -623,19 +635,23 @@
 				1C0E20392701260100E6BB56 /* SearchBarView.swift in Sources */,
 				1CDB94E026FF970E0000C3B6 /* Comic.swift in Sources */,
 				1CDB94E827000BA90000C3B6 /* MarvelListViewModel.swift in Sources */,
+				1C0E2059270342D100E6BB56 /* MarvelCollectionContainerViewCell.swift in Sources */,
 				1C0E201C2700F25C00E6BB56 /* UIColor+Extensions.swift in Sources */,
 				1C0E2043270216C100E6BB56 /* MarvelCharacterViewModelProtocol.swift in Sources */,
 				1C0E204527021D9800E6BB56 /* ComicList.swift in Sources */,
 				1C0E204B270226F700E6BB56 /* MarvelComicCellView.swift in Sources */,
+				1C0E205D2703558C00E6BB56 /* CharacterImageViewCell.swift in Sources */,
 				1CDB94E426FFFE020000C3B6 /* ExternalLinks.swift in Sources */,
 				1C0E20162700EA0F00E6BB56 /* MarvelListViewController.swift in Sources */,
 				1CDB94DB26FF84A70000C3B6 /* MarvelProvider.swift in Sources */,
 				1CDB94DE26FF909F0000C3B6 /* Character.swift in Sources */,
 				1C0E20412702169C00E6BB56 /* MarvelCharacterViewModel.swift in Sources */,
 				1CDB94A826FF76000000C3B6 /* AppDelegate.swift in Sources */,
+				1C0E205B2703473500E6BB56 /* SectionHeaderTitle.swift in Sources */,
 				1C0E20482702227700E6BB56 /* MarvelCharacterViewController.swift in Sources */,
 				1CDB94AA26FF76000000C3B6 /* SceneDelegate.swift in Sources */,
 				1C0E20222700F49300E6BB56 /* UIImage+Extensions.swift in Sources */,
+				1C0E205727033CF800E6BB56 /* MainCharacterInfoCellView.swift in Sources */,
 				1C0E202827011BD200E6BB56 /* Data+Extensions.swift in Sources */,
 				1CDB94E226FFB5DC0000C3B6 /* MarvelImage.swift in Sources */,
 				1C0E203B2701260100E6BB56 /* SearchBarTextField.swift in Sources */,
