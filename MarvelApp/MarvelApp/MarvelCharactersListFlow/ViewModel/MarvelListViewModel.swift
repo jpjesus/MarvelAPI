@@ -17,7 +17,6 @@ enum ListChoice {
 
 final class MarvelListViewModel: MarvelListViewModelProtocol {
     
-    
     private let provider: MoyaProvider<MarvelProvider>
     private var offset: Int = 0
     private var limitPerPage: Int = 20
@@ -62,5 +61,9 @@ final class MarvelListViewModel: MarvelListViewModelProtocol {
     }
     
     func showDetailCharacter(with character: Character, navigation: UINavigationController?) {
+        let vm = MarvelCharacterViewModel(with: provider, character: character)
+        let vc = MarvelCharacterViewController(with: vm)
+        navigation?.modalPresentationStyle = .fullScreen
+        navigation?.pushFadeAnimation(viewController: vc)
     }
 }

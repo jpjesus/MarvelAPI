@@ -16,7 +16,7 @@ struct Comic: Decodable {
     var thumbnail: MarvelImage
     
     enum CodingKeys: String, CodingKey {
-        case name
+        case name = "title"
         case description
         case issueNumber
         case thumbnail

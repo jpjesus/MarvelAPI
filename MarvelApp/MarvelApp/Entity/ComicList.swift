@@ -1,15 +1,15 @@
 //
-//  CharacterList.swift
+//  ComicList.swift
 //  MarvelApp
 //
-//  Created by Jesus Parada on 26/09/21.
+//  Created by Jesus Parada on 27/09/21.
 //
 
 import Foundation
 
-struct CharacterList: Decodable {
+class ComicList: Decodable {
 
-    var characters: [Character]
+    var comics: [Comic]
     
     enum CodingKeys: String, CodingKey  {
         case data
@@ -17,12 +17,12 @@ struct CharacterList: Decodable {
     }
     
     init() {
-        characters = []
+        comics = []
     }
     
-    init(from decoder: Decoder) throws {
+    required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let data = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .data)
-        characters = try data.decodeIfPresent([Character].self, forKey: .results) ?? []
+        comics = try data.decodeIfPresent([Comic].self, forKey: .results) ?? []
     }
 }

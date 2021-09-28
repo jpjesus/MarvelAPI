@@ -1,14 +1,14 @@
 //
-//  MarvelCharacterCellView.swift
+//  MarvelComicCellView.swift
 //  MarvelApp
 //
-//  Created by Jesus Parada on 26/09/21.
+//  Created by Jesus Parada on 27/09/21.
 //
 
 import Foundation
 import UIKit
 
-final class MarvelCharacterCellView: UICollectionViewCell {
+final class MarvelComicCellView: UICollectionViewCell {
     
     lazy var cellContainerView: UIView = {
         let view = UIView()
@@ -18,7 +18,7 @@ final class MarvelCharacterCellView: UICollectionViewCell {
         return view
     }()
     
-    lazy var characterLabel: UILabel = {
+    lazy var comicLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 14)
@@ -29,24 +29,25 @@ final class MarvelCharacterCellView: UICollectionViewCell {
         return label
     }()
     
-    lazy var characterImage: UIImageView = {
+    lazy var comicImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.contentMode = .scaleAspectFit
+        image.contentMode = .scaleAspectFill
         image.setupRoundedCorners(radius: 16)
         return image
     }()
     
-    private var character: Character?
+    private var comic: Comic?
     private var imageTask: URLSessionTask?
-    static var identifier = "MarvelCharacterCellView"
+    static var identifier = "MarvelComicCellView"
     
     override func prepareForReuse() {
         super.prepareForReuse()
         imageTask?.cancel()
-        character = nil
-        characterImage.image = nil
-        characterLabel.text = ""
+        imageTask = nil
+        comic = nil
+        comicImage.image = nil
+        comicLabel.text = ""
     }
     
     override init(frame: CGRect) {
@@ -61,17 +62,17 @@ final class MarvelCharacterCellView: UICollectionViewCell {
         setConstraints()
     }
     
-    func setupCell(with character: Character) {
-        characterLabel.text = character.name
-        imageTask = characterImage.loadImage(with: character.thumbnail, size: .detail)
+    func setupCell(with comic: Comic) {
+        comicLabel.text = comic.name
+        imageTask = comicImage.loadImage(with: comic.thumbnail, size: .detail)
         self.setupBorder(width: 1.5, color: UIColor.primary)
         self.setupRoundedCorners(radius: 15)
     }
     
     private func addSubviews() {
         self.addSubview(cellContainerView)
-        self.addSubview(characterLabel)
-        self.addSubview(characterImage)
+        self.addSubview(comicLabel)
+        self.addSubview(comicImage)
     }
     
     private func setConstraints() {
@@ -82,7 +83,7 @@ final class MarvelCharacterCellView: UICollectionViewCell {
 }
 
 
-private extension MarvelCharacterCellView {
+private extension MarvelComicCellView {
     
     func setContainerConstraints() {
         cellContainerView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
@@ -94,19 +95,17 @@ private extension MarvelCharacterCellView {
     }
     
     func setPhotoImageConstraints() {
-        characterImage.topAnchor.constraint(equalTo: cellContainerView.topAnchor, constant: 8).isActive = true
-        characterImage.leadingAnchor.constraint(equalTo: cellContainerView.leadingAnchor, constant: 8).isActive = true
-        characterImage.trailingAnchor.constraint(equalTo: cellContainerView.trailingAnchor, constant: -8).isActive = true
-        characterImage.heightAnchor.constraint(lessThanOrEqualTo: cellContainerView.heightAnchor, multiplier: 1).isActive = true
-        characterImage.widthAnchor.constraint(lessThanOrEqualTo: cellContainerView.widthAnchor, multiplier: 1).isActive = true
+        comicImage.topAnchor.constraint(equalTo: cellContainerView.topAnchor, constant: 4).isActive = true
+        comicImage.leadingAnchor.constraint(equalTo: cellContainerView.leadingAnchor, constant: 4).isActive = true
+        comicImage.trailingAnchor.constraint(equalTo: cellContainerView.trailingAnchor, constant: -4).isActive = true
     }
     
     func setTitleConstraints() {
-        characterLabel.topAnchor.constraint(equalTo: characterImage.bottomAnchor, constant: 12).isActive = true
-        characterLabel.bottomAnchor.constraint(equalTo: cellContainerView.bottomAnchor, constant: 12).isActive = true
-        characterLabel.centerXAnchor.constraint(equalTo: cellContainerView.centerXAnchor).isActive = true
-        characterLabel.widthAnchor.constraint(lessThanOrEqualTo: cellContainerView.widthAnchor, multiplier: 1).isActive = true
-        characterLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        comicLabel.topAnchor.constraint(equalTo: comicImage.bottomAnchor, constant: 12).isActive = true
+        comicLabel.bottomAnchor.constraint(equalTo: cellContainerView.bottomAnchor, constant: 12).isActive = true
+        comicLabel.centerXAnchor.constraint(equalTo: cellContainerView.centerXAnchor).isActive = true
+        comicLabel.widthAnchor.constraint(lessThanOrEqualTo: cellContainerView.widthAnchor, multiplier: 1).isActive = true
+        comicLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
 }
 

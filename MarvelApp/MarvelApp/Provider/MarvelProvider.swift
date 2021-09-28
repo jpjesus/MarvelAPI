@@ -27,7 +27,7 @@ extension MarvelProvider: TargetType {
         case .getMarvelCharacters(_,_), .searchMarvelCharacter(_):
             return "characters"
         case .getComics(let id):
-            return "comics/\(id)"
+            return "characters/\(id)/comics"
         }
     }
     

@@ -1,5 +1,5 @@
 //
-//  String+Extensions.swift
+//  Data+Extensions.swift
 //  MarvelApp
 //
 //  Created by Jesus Parada on 26/09/21.

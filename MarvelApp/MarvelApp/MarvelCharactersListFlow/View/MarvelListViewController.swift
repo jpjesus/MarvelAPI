@@ -46,14 +46,12 @@ final class MarvelListViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor =  UIColor.background
         addSubviews()
-        setupSearchBar()
         fetchMarvelCharacters()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
-        //setCollection(with: page)
     }
     
     private func addSubviews() {
@@ -114,20 +112,19 @@ final class MarvelListViewController: UIViewController {
     }
     
     private func setSearchViewConstraints(with view: UIView) {
-        view.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 30).isActive = true
+        view.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 15).isActive = true
         view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30).isActive = true
         view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30).isActive = true
         view.heightAnchor.constraint(equalToConstant: 56).isActive = true
         view.widthAnchor.constraint(lessThanOrEqualTo: self.view.widthAnchor, multiplier: 1).isActive = true
-        searchBarContainer = view
+        view.bottomAnchor.constraint(equalTo: collectionView.topAnchor, constant: -15).isActive = true
     }
     
     private func setCollectionConstraints() {
-        collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30).isActive = true
-        collectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30).isActive = true
-        collectionView.topAnchor.constraint(equalTo: searchBarContainer?.bottomAnchor ?? self.view.topAnchor, constant: 15).isActive = true
-        collectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -30).isActive = true
-        collectionView.widthAnchor.constraint(lessThanOrEqualTo: self.view.widthAnchor, multiplier: 1).isActive = true
+        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
+        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
+        collectionView.widthAnchor.constraint(lessThanOrEqualTo: view.widthAnchor, multiplier: 1).isActive = true
     }
 }
 
@@ -166,8 +163,7 @@ extension MarvelListViewController: UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //        guard let photoList = photos else { return }
-        //        presenter.showPhotoDetail(with: self, photo: photoList[indexPath.row])
+        viewModel.showDetailCharacter(with: viewModel.characters[indexPath.row], navigation: navigationController)
     }
 }
 
