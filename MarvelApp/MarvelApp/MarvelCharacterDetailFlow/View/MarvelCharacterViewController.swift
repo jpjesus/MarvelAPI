@@ -97,7 +97,7 @@ final class MarvelCharacterViewController: UIViewController {
     }
     
     func setView(with character: Character) {
-        characterImage.loadImage(with: character.thumbnail, size: .detail)
+        _ = characterImage.loadImage(with: character.thumbnail, size: .detail)
         descriptionArea.text = viewModel.character.description.isEmpty ? "No Info available" : viewModel.character.description
         getCharacterComics()
         view.layoutIfNeeded()
@@ -120,6 +120,12 @@ final class MarvelCharacterViewController: UIViewController {
                 
             }).disposed(by: disposeBag)
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        imageCollectionView.reloadData()
+    }
 }
 
 
@@ -127,22 +133,22 @@ private extension MarvelCharacterViewController {
     
     func setCharacterImageConstraints() {
         characterImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        characterImage.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        characterImage.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        characterImage.heightAnchor.constraint(equalToConstant: 190).isActive = true
+        characterImage.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        characterImage.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        characterImage.heightAnchor.constraint(equalToConstant: 120).isActive = true
     }
     
     func setTextAreaConstraints() {
         descriptionArea.isHidden = false
         descriptionArea.topAnchor.constraint(equalTo: characterImage.bottomAnchor, constant: 10).isActive = true
-        descriptionArea.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15).isActive = true
-        descriptionArea.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15).isActive = true
+        descriptionArea.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 15).isActive = true
+        descriptionArea.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -15).isActive = true
         descriptionArea.heightAnchor.constraint(lessThanOrEqualTo: view.heightAnchor, multiplier: 1).isActive = true
     }
     
     func setWikiInfoConstraints() {
         externalInfoButton.topAnchor.constraint(equalTo: descriptionArea.bottomAnchor, constant: 10).isActive = true
-        externalInfoButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15).isActive = true
+        externalInfoButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 15).isActive = true
         externalInfoButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
         externalInfoButton.widthAnchor.constraint(lessThanOrEqualTo: view.widthAnchor, multiplier: 1).isActive = true
     }
@@ -150,9 +156,10 @@ private extension MarvelCharacterViewController {
     func setImageCollectionConstraints() {
         imageCollectionView.topAnchor.constraint(equalTo: externalInfoButton.bottomAnchor, constant: 10).isActive = true
         imageCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -5).isActive = true
-        imageCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15).isActive = true
-        imageCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15).isActive = true
-        imageCollectionView.widthAnchor.constraint(lessThanOrEqualTo: view.widthAnchor, multiplier: 1).isActive = true
+        imageCollectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 15).isActive = true
+        imageCollectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -15).isActive = true
+        imageCollectionView.widthAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 1).isActive = true
+        imageCollectionView.heightAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 1).isActive = true
     }
 }
 
@@ -180,6 +187,28 @@ extension MarvelCharacterViewController: UICollectionViewDataSource {
 extension MarvelCharacterViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 250, height: collectionView.bounds.height)
+        
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, windowScene.activationState == .foregroundActive else { return .zero }
+        
+        switch windowScene.interfaceOrientation {
+        case .portrait:
+            return CGSize(width: 250, height: collectionView.bounds.height)
+        case .landscapeLeft,
+             .landscapeRight:
+            return CGSize(width: setWidhtSize(3, collectionViewLayout: collectionViewLayout, collectionView: collectionView), height: collectionView.bounds.height)
+        default:
+            return CGSize.zero
+        }
     }
+    
+    private func setWidhtSize(_ numberOfCells: Int, collectionViewLayout: UICollectionViewLayout, collectionView: UICollectionView) -> CGFloat {
+           guard let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout else {
+               return .zero
+           }
+           let spacing = flowLayout.sectionInset.left
+               + flowLayout.sectionInset.right
+               + (flowLayout.minimumInteritemSpacing * CGFloat(numberOfCells - 1))
+           
+           return (collectionView.bounds.width - spacing) / CGFloat(numberOfCells)
+       }
 }

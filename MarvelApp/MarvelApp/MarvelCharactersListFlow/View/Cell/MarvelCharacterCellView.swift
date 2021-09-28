@@ -32,7 +32,7 @@ final class MarvelCharacterCellView: UICollectionViewCell {
     lazy var characterImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.contentMode = .scaleAspectFit
+        image.contentMode = .scaleAspectFill
         image.setupRoundedCorners(radius: 16)
         return image
     }()
@@ -94,9 +94,9 @@ private extension MarvelCharacterCellView {
     }
     
     func setPhotoImageConstraints() {
-        characterImage.topAnchor.constraint(equalTo: cellContainerView.topAnchor, constant: 8).isActive = true
-        characterImage.leadingAnchor.constraint(equalTo: cellContainerView.leadingAnchor, constant: 8).isActive = true
-        characterImage.trailingAnchor.constraint(equalTo: cellContainerView.trailingAnchor, constant: -8).isActive = true
+        characterImage.topAnchor.constraint(equalTo: cellContainerView.topAnchor, constant: 2).isActive = true
+        characterImage.leadingAnchor.constraint(equalTo: cellContainerView.leadingAnchor, constant: 2).isActive = true
+        characterImage.trailingAnchor.constraint(equalTo: cellContainerView.trailingAnchor, constant: -2).isActive = true
         characterImage.heightAnchor.constraint(lessThanOrEqualTo: cellContainerView.heightAnchor, multiplier: 1).isActive = true
         characterImage.widthAnchor.constraint(lessThanOrEqualTo: cellContainerView.widthAnchor, multiplier: 1).isActive = true
     }

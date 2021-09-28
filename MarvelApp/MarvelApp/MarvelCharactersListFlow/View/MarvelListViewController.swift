@@ -171,6 +171,6 @@ extension MarvelListViewController: UICollectionViewDelegate {
 extension MarvelListViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width, height: 150)
+        return CGSize(width: 150, height: 150)
     }
 }
