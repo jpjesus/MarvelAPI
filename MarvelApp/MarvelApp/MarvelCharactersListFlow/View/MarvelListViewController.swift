@@ -23,6 +23,7 @@ final class MarvelListViewController: UIViewController {
         collection.register(MarvelCharacterCellView.self,
                             forCellWithReuseIdentifier: MarvelCharacterCellView.identifier)
         collection.backgroundColor = .clear
+        collection.accessibilityLabel = "MarvelListCollectionView"
         return collection
     }()
     

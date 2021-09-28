@@ -36,7 +36,22 @@ extension MarvelProvider: TargetType {
     }
     
     var sampleData: Data {
-        return Data()
+        switch self {
+        case .getMarvelCharacters:
+            guard let url = Bundle.main.url(forResource: "MarvelListMock", withExtension: "json"),
+                let data = try? Data(contentsOf: url) else {
+                    return Data()
+            }
+            return data
+        case .searchMarvelCharacter:
+            guard let url = Bundle.main.url(forResource: "MarvelListSearchMock", withExtension: "json"),
+                let data = try? Data(contentsOf: url) else {
+                    return Data()
+            }
+            return data
+        default:
+            return Data()
+        }
     }
     
     var task: Task {
