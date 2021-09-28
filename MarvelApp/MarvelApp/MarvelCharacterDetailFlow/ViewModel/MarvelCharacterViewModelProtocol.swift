@@ -16,5 +16,6 @@ protocol MarvelCharacterViewModelProtocol {
     
     func getComicsInfo() -> Observable<[AdditionalInfo]>
     func getAdditionalInfo() -> Observable<Void>
+    func getSeries() -> Observable<Void>
     func showExternalInfo(with url: String, navigation: UINavigationController?)
 }

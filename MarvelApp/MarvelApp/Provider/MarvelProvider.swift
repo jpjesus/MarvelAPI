@@ -58,6 +58,18 @@ extension MarvelProvider: TargetType {
                     return Data()
             }
             return data
+        case .getEvents:
+            guard let url = Bundle.main.url(forResource: "MarvelEventMock", withExtension: "json"),
+                let data = try? Data(contentsOf: url) else {
+                    return Data()
+            }
+            return data
+        case .getComics:
+            guard let url = Bundle.main.url(forResource: "MarvelComicsMock", withExtension: "json"),
+                let data = try? Data(contentsOf: url) else {
+                    return Data()
+            }
+            return data
         default:
             return Data()
         }

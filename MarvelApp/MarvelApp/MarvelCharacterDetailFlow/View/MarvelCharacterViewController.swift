@@ -83,8 +83,9 @@ final class MarvelCharacterViewController: UIViewController {
                 guard let self = self else { return }
                 self.viewModel.character.comics = comics
                 self.imageCollectionView.reloadData()
-            } ,onError:{ error in
-        
+            } ,onError:{ [weak self] error in
+                UIViewController.showErrorAlert(with: self?.navigationController,
+                                                message: error.localizedDescription)
             }).disposed(by: disposeBag)
     }
     

@@ -96,6 +96,9 @@ final class MarvelListViewController: UIViewController {
                 self.viewModel.characters = characters
                 self.refreshControl.endRefreshing()
                 self.collectionView.reloadData()
+            }, onError: { [weak self] error in
+                UIViewController.showErrorAlert(with: self?.navigationController,
+                                                message: error.localizedDescription)
             }).disposed(by: disposeBag)
     }
     

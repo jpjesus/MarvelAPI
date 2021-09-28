@@ -1,0 +1,3446 @@
+{
+  "code": 200,
+  "status": "Ok",
+  "copyright": "© 2021 MARVEL",
+  "attributionText": "Data provided by Marvel. © 2021 MARVEL",
+  "attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2021 MARVEL</a>",
+  "etag": "96559ae0a4decf047016561a029169af96984e5f",
+  "data": {
+    "offset": 0,
+    "limit": 20,
+    "total": 979,
+    "count": 20,
+    "results": [
+      {
+        "id": 17486,
+        "digitalId": 0,
+        "title": "X-Men: Phoenix - Warsong (2006)",
+        "issueNumber": 0,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2017-07-13T15:08:13-0400",
+        "isbn": "0-7851-1931-0",
+        "upc": "",
+        "diamondCode": "",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 0,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/17486",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/17486/x-men_phoenix_-_warsong_2006?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/3318",
+          "name": "X-Men: Phoenix - Warsong (2006)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2029-12-31T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "-0001-11-30T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 0
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/50/4c3645d0d29e3",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/60/5967d3020ef5a",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/00/5967babd39573",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/90/5967855eba7e7",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/60/596782f82d9ba",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/50/4c3645d0d29e3",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 7,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/17486/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Vc Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1032",
+              "name": "Troy Peteri",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1026",
+              "name": "Tyler Kirkham",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/536",
+              "name": "Greg Pak",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9395",
+              "name": "Salvador Regla",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5044",
+              "name": "Marc Silvestri",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1029",
+              "name": "John STARR",
+              "role": "colorist"
+            }
+          ],
+          "returned": 7
+        },
+        "characters": {
+          "available": 7,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/17486/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009175",
+              "name": "Beast"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009243",
+              "name": "Colossus"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009310",
+              "name": "Emma Frost"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009508",
+              "name": "Kitty Pryde"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
+              "name": "Wolverine"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 7
+        },
+        "stories": {
+          "available": 12,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/17486/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/5377",
+              "name": "1 of 5 - 5XLS",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/5378",
+              "name": "1 of 5 - 5XLS",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/5379",
+              "name": "2 of 5 - 5XLS",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/5380",
+              "name": "3 of 5 - 5XLS",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/5381",
+              "name": "3 of 5 - 5XLS",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/5382",
+              "name": "4 of 5 - Warsong - 5XLS",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/5383",
+              "name": "4 of 5 - Warsong - 5XLS",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/5384",
+              "name": "5 of 5 - Warsong - 5XLS",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/5385",
+              "name": "5 of 5 - Warsong - 5XLS",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/7756",
+              "name": "5 of 5 - Warsong - 5XLS",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/7757",
+              "name": "5 of 5 - Warsong - 5XLS",
+              "type": "interiorStory"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/67688",
+              "name": "X-MEN: PHOENIX - WARSONG TPB 0 cover",
+              "type": "cover"
+            }
+          ],
+          "returned": 12
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/17486/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 91784,
+        "digitalId": 0,
+        "title": "X-Men Legends (2021) #4",
+        "issueNumber": 4,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2021-01-28T09:07:41-0500",
+        "isbn": "",
+        "upc": "75960620020700411",
+        "diamondCode": "MAR210601",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/91784",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/91784/x-men_legends_2021_4?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/X-Men-Legends-4/digital-comic/56838?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/31393",
+          "name": "X-Men Legends (2021 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2021-06-23T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2021-05-31T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/c0/60cd0f103753e",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/c0/60cd0f103753e",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91784/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12313",
+              "name": "Mark Basso",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/430",
+              "name": "Edgar Delgado",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4306",
+              "name": "Laura Martin",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/184",
+              "name": "Louise Simonson",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12516",
+              "name": "Walt Simonson",
+              "role": "penciler (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13584",
+              "name": "John Workman",
+              "role": "letterer"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 8,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91784/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009156",
+              "name": "Apocalypse"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009159",
+              "name": "Archangel"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009175",
+              "name": "Beast"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009216",
+              "name": "Caliban"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009362",
+              "name": "Iceman"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009327",
+              "name": "Jean Grey"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 8
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91784/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204653",
+              "name": "cover from X-Men Legends (2021) #4",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204654",
+              "name": "story from X-Men Legends (2021) #4",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91784/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 91783,
+        "digitalId": 56534,
+        "title": "X-Men Legends (2021) #3",
+        "issueNumber": 3,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2021-01-23T09:13:33-0500",
+        "isbn": "",
+        "upc": "75960620020700311",
+        "diamondCode": "FEB210593",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/91783",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/91783/x-men_legends_2021_3?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/X-Men-Legends-3/digital-comic/56534?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=56534&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/56534?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/31393",
+          "name": "X-Men Legends (2021 - Present)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/93428",
+            "name": "X-Men Legends (2021) #3 (Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/94065",
+            "name": "X-Men Legends (2021) #3 (Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2021-04-28T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2021-04-05T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2021-08-02T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2021-04-28T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/60/607717870f785",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/60/607717870f785",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 7,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91783/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12313",
+              "name": "Mark Basso",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Vc Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13584",
+              "name": "John Workman",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/430",
+              "name": "Edgar Delgado",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4306",
+              "name": "Laura Martin",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/184",
+              "name": "Louise Simonson",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12516",
+              "name": "Walt Simonson",
+              "role": "penciler (cover)"
+            }
+          ],
+          "returned": 7
+        },
+        "characters": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91783/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009156",
+              "name": "Apocalypse"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009327",
+              "name": "Jean Grey"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 4
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91783/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204651",
+              "name": "cover from X-Men Legends (2021) #3",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204652",
+              "name": "story from X-Men Legends (2021) #3",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91783/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 90036,
+        "digitalId": 0,
+        "title": "X-Factor Epic Collection: Angel Of Death (Trade Paperback)",
+        "issueNumber": 0,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2021-04-20T10:19:16-0400",
+        "isbn": "978-1-302-92710-3",
+        "upc": "",
+        "diamondCode": "NOV200641",
+        "ean": "9781302 927103 53999",
+        "issn": "",
+        "format": "Trade Paperback",
+        "pageCount": 488,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/90036",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/collection/90036/x-factor_epic_collection_angel_of_death_trade_paperback?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/X-Factor-Epic-Collection-Angel-Of-Death-0/digital-comic/56217?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/31011",
+          "name": "X-Factor Epic Collection: Angel Of Death (2021)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2021-04-21T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2021-02-15T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 39.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/d0/60799bd8899e0",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/d0/60799bd8899e0",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 8,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/90036/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1279",
+              "name": "Jon Bogdanove",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/105",
+              "name": "Sal Buscema",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1299",
+              "name": "Steve Lightle",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1300",
+              "name": "Terry Shoemaker",
+              "role": "penciller"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/184",
+              "name": "Louise Simonson",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13100",
+              "name": "Jeph York",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12516",
+              "name": "Walt Simonson",
+              "role": "penciller (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4430",
+              "name": "Jeff Youngquist",
+              "role": "editor"
+            }
+          ],
+          "returned": 8
+        },
+        "characters": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/90036/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            }
+          ],
+          "returned": 1
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/90036/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/200766",
+              "name": "cover from X-FACTOR EPIC COLLECTION VOL. 2 TPB (2020) #2",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/200767",
+              "name": "story from X-FACTOR EPIC COLLECTION VOL. 2 TPB (2020) #2",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/90036/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 91782,
+        "digitalId": 56469,
+        "title": "X-Men Legends (2021) #2",
+        "issueNumber": 2,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2020-12-05T09:09:17-0500",
+        "isbn": "",
+        "upc": "75960620020700211",
+        "diamondCode": "JAN210615",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/91782",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/91782/x-men_legends_2021_2?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/X-Men-Legends-2/digital-comic/56469?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=56469&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/56469?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/31393",
+          "name": "X-Men Legends (2021 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2021-03-31T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2021-03-08T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2021-07-05T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2021-03-31T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/d0/605cee2638f9b",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/d0/605cee2638f9b",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91782/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12313",
+              "name": "Mark Basso",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1148",
+              "name": "Brett Booth",
+              "role": "penciler (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Vc Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13677",
+              "name": "Adelso Corona",
+              "role": "inker (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12239",
+              "name": "Guru Efx",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/6001",
+              "name": "Fabian Nicieza",
+              "role": "writer"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 5,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91782/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009247",
+              "name": "Corsair"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009293",
+              "name": "Erik the Red"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009337",
+              "name": "Havok"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 5
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91782/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204649",
+              "name": "cover from X-Men Legends (2021) #2",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204650",
+              "name": "story from X-Men Legends (2021) #2",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91782/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 81192,
+        "digitalId": 56011,
+        "title": "Champions (2020) #4",
+        "issueNumber": 4,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2021-04-22T10:09:48-0400",
+        "isbn": "",
+        "upc": "75960609709800411",
+        "diamondCode": "DEC200619",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/81192",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/81192/champions_2020_4?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Champions-4/digital-comic/56011?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=56011&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/56011?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/29034",
+          "name": "Champions (2020)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/93602",
+            "name": "Champions (2020) #4 (Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2021-02-17T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2021-01-25T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2021-05-24T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2021-02-17T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/03/6026d1a455386",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/03/6026d1a455386",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/81192/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13180",
+              "name": "Federico Blee",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10172",
+              "name": "Vc Clayton Cowles",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13575",
+              "name": "Eve Ewing",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13878",
+              "name": "Antonio Infante",
+              "role": "penciler (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13539",
+              "name": "Robert Quinn",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13046",
+              "name": "Alanna Smith",
+              "role": "editor"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/81192/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1017831",
+              "name": "Ironheart (Riri Williams)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1017577",
+              "name": "Ms. Marvel (Kamala Khan)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1017078",
+              "name": "Nova (Sam Alexander)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1016181",
+              "name": "Spider-Man (Miles Morales)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 6
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/81192/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/180105",
+              "name": "cover from Champions (2019) #4",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/180106",
+              "name": "story from Champions (2019) #4",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/81192/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 91781,
+        "digitalId": 56191,
+        "title": "X-Men Legends (2021) #1",
+        "issueNumber": 1,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2021-05-20T14:56:23-0400",
+        "isbn": "",
+        "upc": "75960620020700111",
+        "diamondCode": "DEC200545",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 40,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/91781",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/91781/x-men_legends_2021_1?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/X-Men-Legends-1/digital-comic/56191?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=56191&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/56191?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/31393",
+          "name": "X-Men Legends (2021 - Present)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/93289",
+            "name": "X-Men Legends (2021) #1 (Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/93291",
+            "name": "X-Men Legends (2021) #1 (Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/93292",
+            "name": "X-Men Legends (2021) #1 (Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/93426",
+            "name": "X-Men Legends (2021) #1 (Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/93447",
+            "name": "X-Men Legends (2021) #1 (Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2021-02-17T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2021-01-25T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2021-05-24T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2021-02-17T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 4.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 4.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/c0/6026d16e53203",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/c0/6026d16e53203",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91781/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12313",
+              "name": "Mark Basso",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/1148",
+              "name": "Brett Booth",
+              "role": "penciler (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Vc Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13677",
+              "name": "Adelso Corona",
+              "role": "inker (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12239",
+              "name": "Guru Efx",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/6001",
+              "name": "Fabian Nicieza",
+              "role": "writer"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91781/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009337",
+              "name": "Havok"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 3
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91781/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204647",
+              "name": "cover from X-Men Legends (2021) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/204648",
+              "name": "story from X-Men Legends (2021) #1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/91781/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 78659,
+        "digitalId": 55788,
+        "title": "Cable (2020) #7",
+        "issueNumber": 7,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2021-04-22T10:40:54-0400",
+        "isbn": "",
+        "upc": "75960609662600711",
+        "diamondCode": "OCT200560",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/78659",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/78659/cable_2020_7?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Cable-7/digital-comic/55788?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=55788&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/55788?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/28038",
+          "name": "Cable (2020 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2021-01-20T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2020-12-14T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2021-04-26T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2021-01-20T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/c0/5ff8cf33a48d2",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/c0/5ff8cf33a48d2",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/78659/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11680",
+              "name": "Gerry Duggan",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13459",
+              "name": "Phil Noto",
+              "role": "penciler (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+              "name": "Vc Joe Sabino",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8822",
+              "name": "Jordan D. White",
+              "role": "editor"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 1,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/78659/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            }
+          ],
+          "returned": 1
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/78659/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/174340",
+              "name": "cover from Cable (2020) #7",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/174341",
+              "name": "story from Cable (2020) #7",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/78659/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 90146,
+        "digitalId": 55842,
+        "title": "X-Men (2019) #16",
+        "issueNumber": 16,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2020-08-29T09:10:22-0400",
+        "isbn": "",
+        "upc": "759606094661001611",
+        "diamondCode": "OCT200571",
+        "ean": "",
+        "issn": "2377-3170",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/90146",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/90146/x-men_2019_16?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/X-Men-16/digital-comic/55842?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=55842&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/55842?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/27567",
+          "name": "X-Men (2019 - Present)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/92425",
+            "name": "X-Men (2019) #16 (Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2020-12-30T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2020-11-23T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2021-04-05T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2020-12-30T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/5fda7d9e56a62",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/5fda7d9e56a62",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/90146/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10172",
+              "name": "Vc Clayton Cowles",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11579",
+              "name": "Sunny Gho",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11743",
+              "name": "Jonathan Hickman",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13459",
+              "name": "Phil Noto",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8822",
+              "name": "Jordan D. White",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "penciler (cover)"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/90146/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/90146/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/201217",
+              "name": "cover from X-Men (2019) #16",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/201218",
+              "name": "story from X-Men (2019) #16",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/90146/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 78657,
+        "digitalId": 55546,
+        "title": "Cable (2020) #5",
+        "issueNumber": 5,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2020-12-26T12:37:41-0500",
+        "isbn": "",
+        "upc": "75960609662600511",
+        "diamondCode": "AUG200621",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/78657",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/78657/cable_2020_5?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Cable-5/digital-comic/55546?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=55546&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/55546?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/28038",
+          "name": "Cable (2020 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2020-10-14T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2020-09-21T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2021-01-18T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2020-10-14T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/b0/5fc40babbc329",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/b0/5fc40babbc329",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/78657/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11680",
+              "name": "Gerry Duggan",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13459",
+              "name": "Phil Noto",
+              "role": "penciler (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12974",
+              "name": "Vc Joe Sabino",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8822",
+              "name": "Jordan D. White",
+              "role": "editor"
+            }
+          ],
+          "returned": 4
+        },
+        "characters": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/78657/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009214",
+              "name": "Cable"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009327",
+              "name": "Jean Grey"
+            }
+          ],
+          "returned": 3
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/78657/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/174336",
+              "name": "cover from Cable (2020) #5",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/174337",
+              "name": "story from Cable (2020) #5",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/78657/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 78357,
+        "digitalId": 54673,
+        "title": "X-Men: Marvels Snapshots (2020) #1",
+        "issueNumber": 1,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2020-08-19T13:51:35-0400",
+        "isbn": "",
+        "upc": "75960609605300111",
+        "diamondCode": "FEB200902",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 40,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/78357",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/78357/x-men_marvels_snapshots_2020_1?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/X-Men-Marvels-Snapshots-1/digital-comic/54673?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=54673&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/54673?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/27944",
+          "name": "X-Men: Marvels Snapshots (2020)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2020-09-16T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2020-08-24T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2020-12-21T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2020-09-16T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 4.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 4.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/c0/5f5942f05d085",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/c0/5f5942f05d085",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/78357/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/14051",
+              "name": "Jay Edidin",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13207",
+              "name": "Chris O'halloran",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/791",
+              "name": "Tom Orzechowski",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13974",
+              "name": "Tom Reilly",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/63",
+              "name": "Alex Ross",
+              "role": "painter (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13027",
+              "name": "Darren Shan",
+              "role": "editor"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/78357/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/78357/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/173730",
+              "name": "cover from Marvels Snapshots: TBD B (2029) #1",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/173731",
+              "name": "story from Marvels Snapshots: TBD B (2029) #1",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/78357/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 79947,
+        "digitalId": 54358,
+        "title": "X-Men (2019) #9",
+        "issueNumber": 9,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2020-03-25T12:55:27-0400",
+        "isbn": "",
+        "upc": "759606094661000911",
+        "diamondCode": "JAN200845",
+        "ean": "",
+        "issn": "2377-3170",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/79947",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/79947/x-men_2019_9?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/X-Men-9/digital-comic/54358?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=54358&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/54358?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/27567",
+          "name": "X-Men (2019 - Present)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2020-03-25T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2020-03-02T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2020-09-28T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2020-03-25T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/c0/5e62ac9e4f616",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/c0/5e62ac9e4f616",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/79947/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13215",
+              "name": "Rain Beredo",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10172",
+              "name": "Vc Clayton Cowles",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11579",
+              "name": "Sunny Gho",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11743",
+              "name": "Jonathan Hickman",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8822",
+              "name": "Jordan D. White",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "penciler (cover)"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 10,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/79947/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009247",
+              "name": "Corsair"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009321",
+              "name": "Gladiator (Kallark)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009337",
+              "name": "Havok"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009342",
+              "name": "Hepzibah"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009363",
+              "name": "Imperial Guard"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009327",
+              "name": "Jean Grey"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009531",
+              "name": "Raza"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011011",
+              "name": "Vulcan (Gabriel Summers)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 10
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/79947/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/176963",
+              "name": "cover from X-Men (2019) #9",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/176964",
+              "name": "story from X-Men (2019) #9",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/79947/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 79946,
+        "digitalId": 54357,
+        "title": "X-Men (2019) #8",
+        "issueNumber": 8,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2020-03-04T11:40:46-0500",
+        "isbn": "",
+        "upc": "759606094661000811",
+        "diamondCode": "JAN200843",
+        "ean": "",
+        "issn": "2377-3170",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/79946",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/79946/x-men_2019_8?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/X-Men-8/digital-comic/54357?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=54357&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/54357?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/27567",
+          "name": "X-Men (2019 - Present)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/85301",
+            "name": "X-Men (2019) #8 (Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2020-03-11T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2020-02-17T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2020-09-14T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2020-03-11T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/40/5e5835541c3ca",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/40/5e5835541c3ca",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/79946/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/9018",
+              "name": "Mahmud Asrar",
+              "role": "penciler"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10172",
+              "name": "Vc Clayton Cowles",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11579",
+              "name": "Sunny Gho",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11743",
+              "name": "Jonathan Hickman",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8822",
+              "name": "Jordan D. White",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "penciler (cover)"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/79946/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009208",
+              "name": "Brood"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011336",
+              "name": "New Mutants"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 4
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/79946/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/176961",
+              "name": "cover from X-Men (2019) #8",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/176962",
+              "name": "story from X-Men (2019) #8",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/79946/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 76806,
+        "digitalId": 53310,
+        "title": "X-Men (2019) #4",
+        "issueNumber": 4,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2019-11-05T09:09:42-0500",
+        "isbn": "",
+        "upc": "759606094661000411",
+        "diamondCode": "OCT190906",
+        "ean": "",
+        "issn": "2377-3170",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/76806",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/76806/x-men_2019_4?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/X-Men-4/digital-comic/53310?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=53310&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/53310?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/27567",
+          "name": "X-Men (2019 - Present)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/83349",
+            "name": "X-Men (2019) #4 (Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2020-01-01T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2019-11-24T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2020-07-06T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2020-01-01T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/e0/5e00d9c50b084",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/e0/5e00d9c50b084",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/76806/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8542",
+              "name": "Gerry Alanguilan",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10172",
+              "name": "Vc Clayton Cowles",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11579",
+              "name": "Sunny Gho",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11743",
+              "name": "Jonathan Hickman",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8822",
+              "name": "Jordan D. White",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "penciler (cover)"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/76806/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009156",
+              "name": "Apocalypse"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009324",
+              "name": "Gorgon"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009417",
+              "name": "Magneto"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009504",
+              "name": "Professor X"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 6
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/76806/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/170484",
+              "name": "cover from X-Men (2019) #4",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/170485",
+              "name": "story from X-Men (2019) #4",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/76806/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 76805,
+        "digitalId": 53309,
+        "title": "X-Men (2019) #3",
+        "issueNumber": 3,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2019-09-25T09:07:41-0400",
+        "isbn": "",
+        "upc": "759606094661000311",
+        "diamondCode": "OCT190903",
+        "ean": "",
+        "issn": "2377-3170",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/76805",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/76805/x-men_2019_3?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/X-Men-3/digital-comic/53309?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=53309&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/53309?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/27567",
+          "name": "X-Men (2019 - Present)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/83347",
+            "name": "X-Men (2019) #3 (Variant)"
+          },
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/83348",
+            "name": "X-Men (2019) #3 (Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2019-12-04T00:00:00-0500"
+          },
+          {
+            "type": "focDate",
+            "date": "2019-11-04T00:00:00-0500"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2020-06-08T00:00:00-0400"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2019-12-04T00:00:00-0500"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/d0/5ddc12cb3c18e",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/d0/5ddc12cb3c18e",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 6,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/76805/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8542",
+              "name": "Gerry Alanguilan",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10172",
+              "name": "Vc Clayton Cowles",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11579",
+              "name": "Sunny Gho",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11743",
+              "name": "Jonathan Hickman",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8822",
+              "name": "Jordan D. White",
+              "role": "editor"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/758",
+              "name": "Leinil Francis Yu",
+              "role": "penciler (cover)"
+            }
+          ],
+          "returned": 6
+        },
+        "characters": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/76805/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009310",
+              "name": "Emma Frost"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 3
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/76805/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/170482",
+              "name": "cover from X-Men (2019) #3",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/170483",
+              "name": "story from X-Men (2019) #3",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/76805/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 73044,
+        "digitalId": 51909,
+        "title": "Uncanny X-Men (2018) #22",
+        "issueNumber": 22,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2019-07-17T09:03:36-0400",
+        "isbn": "",
+        "upc": "75960609134802211",
+        "diamondCode": "MAY190899",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 40,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/73044",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/73044/uncanny_x-men_2018_22?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Uncanny-X-Men-22/digital-comic/51909?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=51909&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/51909?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/26038",
+          "name": "Uncanny X-Men (2018 - 2019)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/77782",
+            "name": "Uncanny X-Men (2018) #22 (Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2019-07-17T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2019-06-24T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2020-01-20T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2019-07-17T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 4.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 4.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/50/5d25eefa22735",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/50/5d25eefa22735",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 8,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73044/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13162",
+              "name": "Erick Arciniega",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Vc Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12239",
+              "name": "Guru Efx",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11757",
+              "name": "Salvador Larroca",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12120",
+              "name": "David Messina",
+              "role": "penciler"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10824",
+              "name": "Whilce Portacio",
+              "role": "penciler (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12771",
+              "name": "Matthew Rosenberg",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8822",
+              "name": "Jordan D. White",
+              "role": "editor"
+            }
+          ],
+          "returned": 8
+        },
+        "characters": {
+          "available": 3,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73044/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
+              "name": "Wolverine"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 3
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73044/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/162760",
+              "name": "cover from Uncanny X-Men (2018) #22",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/162761",
+              "name": "story from Uncanny X-Men (2018) #22",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73044/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 73043,
+        "digitalId": 51908,
+        "title": "Uncanny X-Men (2018) #21",
+        "issueNumber": 21,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2020-01-03T16:25:13-0500",
+        "isbn": "",
+        "upc": "75960609134802111",
+        "diamondCode": "MAY190897",
+        "ean": "",
+        "issn": "2574-0628",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/73043",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/73043/uncanny_x-men_2018_21?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Uncanny-X-Men-21/digital-comic/51908?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=51908&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/51908?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/26038",
+          "name": "Uncanny X-Men (2018 - 2019)"
+        },
+        "variants": [
+          {
+            "resourceURI": "http://gateway.marvel.com/v1/public/comics/79910",
+            "name": "Uncanny X-Men (2018) #21 (Variant)"
+          }
+        ],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2019-07-03T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2019-06-10T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2020-01-06T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2019-07-03T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/70/5d126efd32eef",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/70/5d126efd32eef",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 7,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73043/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13162",
+              "name": "Erick Arciniega",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Vc Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12239",
+              "name": "Guru Efx",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11757",
+              "name": "Salvador Larroca",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10824",
+              "name": "Whilce Portacio",
+              "role": "penciler (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12771",
+              "name": "Matthew Rosenberg",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8822",
+              "name": "Jordan D. White",
+              "role": "editor"
+            }
+          ],
+          "returned": 7
+        },
+        "characters": {
+          "available": 10,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73043/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009168",
+              "name": "Banshee"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009453",
+              "name": "Dani Moonstar"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009310",
+              "name": "Emma Frost"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009337",
+              "name": "Havok"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011428",
+              "name": "Hope Summers"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009382",
+              "name": "Juggernaut"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009415",
+              "name": "Magik (Illyana Rasputin)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011056",
+              "name": "Multiple Man"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
+              "name": "Wolverine"
+            }
+          ],
+          "returned": 10
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73043/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/162758",
+              "name": "cover from Uncanny X-Men (2018) #21",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/162759",
+              "name": "story from Uncanny X-Men (2018) #21",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73043/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 73042,
+        "digitalId": 51694,
+        "title": "Uncanny X-Men (2018) #20",
+        "issueNumber": 20,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2019-04-26T11:42:45-0400",
+        "isbn": "",
+        "upc": "75960609134802011",
+        "diamondCode": "APR190898",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/73042",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/73042/uncanny_x-men_2018_20?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Uncanny-X-Men-20/digital-comic/51694?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=51694&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/51694?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/26038",
+          "name": "Uncanny X-Men (2018 - 2019)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2019-06-19T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2019-05-27T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2019-12-23T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2019-06-19T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/e0/5d0130d85c91b",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/e0/5d0130d85c91b",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 7,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73042/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13162",
+              "name": "Erick Arciniega",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Vc Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12239",
+              "name": "Guru Efx",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11757",
+              "name": "Salvador Larroca",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10824",
+              "name": "Whilce Portacio",
+              "role": "penciler (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12771",
+              "name": "Matthew Rosenberg",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8822",
+              "name": "Jordan D. White",
+              "role": "editor"
+            }
+          ],
+          "returned": 7
+        },
+        "characters": {
+          "available": 4,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73042/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009453",
+              "name": "Dani Moonstar"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009337",
+              "name": "Havok"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 4
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73042/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/162756",
+              "name": "cover from Uncanny X-Men (2018) #20",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/162757",
+              "name": "story from Uncanny X-Men (2018) #20",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73042/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 73319,
+        "digitalId": 0,
+        "title": "UNCANNY X-MEN: WOLVERINE AND CYCLOPS VOL. 1 TPB (Trade Paperback)",
+        "issueNumber": 2,
+        "variantDescription": "",
+        "description": null,
+        "modified": "2019-06-14T12:06:26-0400",
+        "isbn": "978-1-302-91582-7",
+        "upc": "",
+        "diamondCode": "MAR191021",
+        "ean": "9781302 915827 51999",
+        "issn": "",
+        "format": "Trade Paperback",
+        "pageCount": 184,
+        "textObjects": [],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/73319",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/collection/73319/uncanny_x-men_wolverine_and_cyclops_vol_1_tpb_trade_paperback?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/UNCANNY-X-MEN-WOLVERINE-AND-CYCLOPS-VOL-1-TPB-2/digital-comic/51763?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/26436",
+          "name": "UNCANNY X-MEN: WOLVERINE AND CYCLOPS VOL. 1 TPB (2019)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2019-06-19T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2019-04-29T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 19.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/5d02b6dc010bf",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/5d02b6dc010bf",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 8,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73319/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Vc Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12239",
+              "name": "Guru Efx",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12991",
+              "name": "Rachelle Rosenberg",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13224",
+              "name": "Michael Spicer",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/11757",
+              "name": "Salvador Larroca",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8794",
+              "name": "John Mccrea",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12856",
+              "name": "Juanan Ramirez",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/4430",
+              "name": "Jeff Youngquist",
+              "role": "editor"
+            }
+          ],
+          "returned": 8
+        },
+        "characters": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73319/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
+              "name": "Wolverine"
+            }
+          ],
+          "returned": 2
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73319/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/163317",
+              "name": "cover from UNCANNY X-MEN VOL. 2 TPB (2019) #2",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/163318",
+              "name": "story from UNCANNY X-MEN VOL. 2 TPB (2019) #2",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73319/events",
+          "items": [],
+          "returned": 0
+        }
+      },
+      {
+        "id": 73040,
+        "digitalId": 51378,
+        "title": "Uncanny X-Men (2018) #18",
+        "issueNumber": 18,
+        "variantDescription": "",
+        "description": " First-the X-Men lose one of their own. Then-the new Black King of the Hellfire Club makes a move ",
+        "modified": "2019-05-09T14:19:01-0400",
+        "isbn": "",
+        "upc": "75960609134801811",
+        "diamondCode": "MAR190934",
+        "ean": "",
+        "issn": "",
+        "format": "Comic",
+        "pageCount": 32,
+        "textObjects": [
+          {
+            "type": "issue_solicit_text",
+            "language": "en-us",
+            "text": " First-the X-Men lose one of their own. Then-the new Black King of the Hellfire Club makes a move "
+          }
+        ],
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/73040",
+        "urls": [
+          {
+            "type": "detail",
+            "url": "http://marvel.com/comics/issue/73040/uncanny_x-men_2018_18?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "purchase",
+            "url": "http://comicstore.marvel.com/Uncanny-X-Men-18/digital-comic/51378?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "reader",
+            "url": "http://marvel.com/digitalcomics/view.htm?iid=51378&utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          },
+          {
+            "type": "inAppLink",
+            "url": "https://applink.marvel.com/issue/51378?utm_campaign=apiRef&utm_source=9ae5c38369791e52b261f6c56c77c8e1"
+          }
+        ],
+        "series": {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/26038",
+          "name": "Uncanny X-Men (2018 - 2019)"
+        },
+        "variants": [],
+        "collections": [],
+        "collectedIssues": [],
+        "dates": [
+          {
+            "type": "onsaleDate",
+            "date": "2019-05-15T00:00:00-0400"
+          },
+          {
+            "type": "focDate",
+            "date": "2019-04-22T00:00:00-0400"
+          },
+          {
+            "type": "unlimitedDate",
+            "date": "2019-11-18T00:00:00-0500"
+          },
+          {
+            "type": "digitalPurchaseDate",
+            "date": "2019-05-15T00:00:00-0400"
+          }
+        ],
+        "prices": [
+          {
+            "type": "printPrice",
+            "price": 3.99
+          },
+          {
+            "type": "digitalPurchasePrice",
+            "price": 3.99
+          }
+        ],
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/40/5cd4498085f65",
+          "extension": "jpg"
+        },
+        "images": [
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/40/5cd4498085f65",
+            "extension": "jpg"
+          },
+          {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/50/5c76d4896c652",
+            "extension": "jpg"
+          }
+        ],
+        "creators": {
+          "available": 9,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73040/creators",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13162",
+              "name": "Erick Arciniega",
+              "role": "colorist (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/5251",
+              "name": "Vc Joe Caramagna",
+              "role": "letterer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12239",
+              "name": "Guru Efx",
+              "role": "colorist"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/10824",
+              "name": "Whilce Portacio",
+              "role": "penciler (cover)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/12771",
+              "name": "Matthew Rosenberg",
+              "role": "writer"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/13276",
+              "name": "C.F. Villa",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/413",
+              "name": "Juan Vlasco",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/469",
+              "name": "Craig Yeung",
+              "role": "inker"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/creators/8822",
+              "name": "Jordan D. White",
+              "role": "editor"
+            }
+          ],
+          "returned": 9
+        },
+        "characters": {
+          "available": 7,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73040/characters",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009257",
+              "name": "Cyclops"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009310",
+              "name": "Emma Frost"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009337",
+              "name": "Havok"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009415",
+              "name": "Magik (Illyana Rasputin)"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009465",
+              "name": "Mystique"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
+              "name": "Wolverine"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009726",
+              "name": "X-Men"
+            }
+          ],
+          "returned": 7
+        },
+        "stories": {
+          "available": 2,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73040/stories",
+          "items": [
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/162752",
+              "name": "cover from Uncanny X-Men (2018) #18",
+              "type": "cover"
+            },
+            {
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/162753",
+              "name": "story from Uncanny X-Men (2018) #18",
+              "type": "interiorStory"
+            }
+          ],
+          "returned": 2
+        },
+        "events": {
+          "available": 0,
+          "collectionURI": "http://gateway.marvel.com/v1/public/comics/73040/events",
+          "items": [],
+          "returned": 0
+        }
+      }
+    ]
+  }
+}
