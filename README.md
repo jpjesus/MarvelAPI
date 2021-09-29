@@ -1,6 +1,6 @@
 # MarvelAPI
 
-Simple app that lists and seach for marvel and show their detail using MVVM architecture.
+Simple app that lists and search for marvel and show their detail using MVVM architecture.
 
 ## Architecture
 
